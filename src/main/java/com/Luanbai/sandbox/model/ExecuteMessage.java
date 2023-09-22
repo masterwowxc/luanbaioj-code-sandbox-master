@@ -17,11 +17,18 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class ExecuteMessage {
 
+    //错误码
     private Integer exitCode;
 
+    //正常输出信息
     private String message;
 
+    //异常输出信息
     private String errorMessage;
 
-    private long time;
+    //运行代码的时间
+    private Long time;
+
+    //运行内存
+    private Long memory;
 }
